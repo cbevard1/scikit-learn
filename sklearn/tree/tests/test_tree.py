@@ -12,6 +12,7 @@ from scipy.sparse import csc_matrix
 from scipy.sparse import csr_matrix
 from scipy.sparse import coo_matrix
 
+from examples.ensemble.plot_gradient_boosting_regression import diabetes
 from sklearn.random_projection import _sparse_random_matrix
 
 from sklearn.metrics import accuracy_score
@@ -133,6 +134,7 @@ X_sparse_mix = _sparse_random_matrix(20, 10, density=0.25,
 
 DATASETS = {
     "iris": {"X": iris.data, "y": iris.target},
+    "diabetes": {"X": diabetes.data, "y": diabetes.target},
     "boston": {"X": boston.data, "y": boston.target},
     "digits": {"X": digits.data, "y": digits.target},
     "toy": {"X": X, "y": y},
