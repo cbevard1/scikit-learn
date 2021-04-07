@@ -4,6 +4,7 @@ classification, regression and anomaly detection.
 """
 from ._base import BaseEnsemble
 from ._forest import RandomForestClassifier
+from ._forest import HddRandomForestClassifier
 from ._forest import RandomForestRegressor
 from ._forest import RandomTreesEmbedding
 from ._forest import ExtraTreesClassifier
@@ -24,7 +25,7 @@ from ._hist_gradient_boosting.gradient_boosting import (
 )
 
 __all__ = ["BaseEnsemble",
-           "RandomForestClassifier", "RandomForestRegressor",
+           "RandomForestClassifier", "HddRandomForestClassifier", "RandomForestRegressor",
            "RandomTreesEmbedding", "ExtraTreesClassifier",
            "ExtraTreesRegressor", "BaggingClassifier",
            "BaggingRegressor", "IsolationForest", "GradientBoostingClassifier",
